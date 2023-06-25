@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <style>
+        /* For BackGround Video */
+      .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+        background-size: cover;
+      }
+      .fullscreen-bg-video {
+        position: fixed;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      /* for Sign Up Form */
+      .MainDiv {
+        height: 550px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      label {
+        font-size: large;
+      }
+      form {
+        background-image: linear-gradient(rgb(243, 253, 253),#0ba5f78a);
+        width: 400px;
+        font-family: 'Lucida Sans';
+      }
+      .fieldset {
+        color: black;
+      }
+      input{
+        border: 1px solid black;
+      }
+      input:hover {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullscreen-bg">
+      <video
+        src="background_-_6266 (540p).mp4"
+        autoplay
+        loop
+        muted
+        class="fullscreen-bg-video"></video>
+    </div>
+      <div class="MainDiv">
+        <form>
+          <fieldset class="fildset">
+            <br />
+            <legend><h2>Sign Up</h2></legend>
+            <i class="fa-solid fa-user"></i>
+            <label for="UserName">UserName </label><br />
+            <input type="text"name="UserName"placeholder="Enter UserName..."maxlength="20"/><br /><br /><br>
+
+            <i class="fa-regular fa-keyboard"></i>&nbsp;
+            <label for="EnrollmentNo">Enrollment No</label><br />
+            <input type="text"  name="EnrollmentNo"  placeholder="Enter Enrollment No..."/><br /><br /><br>
+
+            <i class="fa-solid fa-key"></i>&nbsp;
+            <label for="Password">Password</label><br />
+                <input type="Password" name="Password"placeholder="Enter Password..." /><br /><br /><br>
+
+            <i class="fa-solid fa-person-half-dress"></i>&nbsp;
+            <label for="gender">Gender</label><br />
+            <input type="radio" name="gender" placeholder="gender" />
+            <i class="fa-solid fa-person" style="color: #0d0c50e7;"></i>&nbsp; male &nbsp;
+            <input type="radio" name="gender" placeholder="gender" />
+            <i class="fa-solid fa-child-dress" style="color: #b9094aca; "></i> &nbsp;female<br /><br /><br>
+
+            <i class="fa-solid fa-building-columns"></i>&nbsp;
+            <label for="collage">Collage</label><br />
+            <input type="checkbox" name="collage" placeholder="collage" />ASOIT
+            &nbsp; &nbsp;
+            <input type="checkbox" name="collage" placeholder="collage" />SOCET
+            <br /><br /><br />
+
+            <input type="submit" value="sign Up" /> <br /><br />
+          </fieldset>
+        </form>
+      </div>
+  </body>
+</html>

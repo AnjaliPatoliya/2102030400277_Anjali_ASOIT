@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallaex Effect 2</title>
+    <style>
+        .parallax{
+            background-image: url("Image.jpg");
+            min-width: 100%;
+            height: 950px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .div1{
+            top: 0; 
+            left: 0;
+            right: 0;
+            height: 200px;
+            width: 100%;
+            font-size: 30px;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgba(249, 162, 156, 0.512);
+            background-image: linear-gradient(#f6f6fe51, #8ee9f785);
+            color:black;
+        }
+        .Video{
+            height: auto;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 50%;
+            position: fixed;
+            z-index:-1;
+        }
+
+        .Video figure {
+            margin: 8px;
+            position: relative;
+        }
+        .Video video{
+            width: 100%;
+            min-width: 100%;
+        }
+        .div3{
+            height:100px;
+            min-width: 100%;
+            left:0;
+            right:0;
+            text-align: center;
+            background-image: linear-gradient(#dffbf6c5,#2f88a341);
+            background-color: rgba(128, 128, 128, 0.478);
+            background-size: cover;
+            margin-top: 500px;
+        }
+        .Video figure h1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-right: 3px solid #bcafaf; 
+             padding: 5px 10px 5px 5px;
+        }
+        .second{
+            background-image: url("Sky-and-Birds-wallpaper-for-desktop.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+
+    <div class="div1">
+        <h3>Parallaex Effect</h3>
+        Hii, How Are You
+    </div>
+
+    <div class="Video">
+        <figure>
+            <video src="ocean_-_62249 (540p).mp4"  autoplay  loop muted>
+            </video>
+        </figure>
+    </div>
+
+    <div class="div3">
+        <div class="nextText">
+            <h1>Hello, Welcome..!!</h1>
+        </div>
+   </div>
+
+    <div class="second parallax"></div>
+</body>
+</html>

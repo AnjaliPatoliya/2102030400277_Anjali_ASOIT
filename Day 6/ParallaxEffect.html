@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        .parallaxEffect{
+            background-image: url("Image.jpg");
+            min-height: 500px;
+            min-width: 400px;
+            color: white; 
+            /* Creat the parallax Scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Voluptate cum repudiandae sunt distinctio, animi quae molestiae possimus quibusdam? 
+         Labore fugit dolore voluptatum sapiente nam neque eos repudiandae nihil voluptatibus sed!</p>
+
+    <div class="parallaxEffect"></div>
+
+    <div style="height:500px; background-color: linear-gradint(#f5f6f6ed, #6afdffe0); font-size:25px; font-family: cursive;">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div>
+    <div class="parallaxEffect1"></div>
+    <div></div>
+</body>
+</html>
