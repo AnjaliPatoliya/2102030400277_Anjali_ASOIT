@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery Basic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+        $("body").css("background-image","url('Flower.jpg')");
+        $(".Msg").text("Want to know today's date?");
+        $("#date").click(function() {
+            datetime();
+        });
+    });
+    function datetime(){
+        var dt = new Date;
+        alert(dt);
+    }
+    </script>
+    
+    <style>
+        body{
+            background-size: cover;
+        }
+        .Msg {
+            color:black;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+
+    </style>
+
+    
+
+</head>
+<body align="start">
+    <span class="Msg"></span><br><br>
+    <input type="button" id="date" value="Get Date"/>
+</body>
+</html>
