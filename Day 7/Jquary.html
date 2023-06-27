@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQuary Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script type="text/javascript" language="javascript">
+
+      //JQuery makes a use of anonymous functions
+      $(document).ready(function () 
+      {
+        //Set text using class name
+        $(".lbMessage").text("Welcome to Jquary");
+        //Apply css to all H1 tage
+        $("h1").css("color", "blue");
+        $("body").css("background-color"," rgba(174, 230, 211, 0.9)")
+        $("#btnGetLenght").click(function () {
+          stringLength(); //Call external file function
+        });
+      });
+      
+    </script>
+    <script type="text/javascript" src="JavaScriptExample.js"></script>
+    <style>
+      .lbMessage {
+        color: #034b4be6;
+        font-size: 40px;
+        font-family: 'Lucida Sans';
+      }
+    </style>
+  </head>
+  <body>
+    <span class="lbMessage">1</span>
+    <h1>you want to know length Of Username</h1>
+    <input type="text" id="firstName" /><br /><br />
+    <button id="btnGetLenght">Get length of Name</button><br /><br />
+  </body>
+</html>
