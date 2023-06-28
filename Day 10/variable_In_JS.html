@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Declaretion</title>
+    <style>
+        h3{
+            text-decoration: underline;
+            color: palevioletred;
+            font-family: 'Lucida Sans';
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Method 1 -->
+    <h3>Automatically Variable declared</h3>
+    <p id="automatically"></p>
+    <script>
+     x = 4;
+     y = 10;
+     z = x+y;
+     document.getElementById("automatically").innerHTML = "The Value of z = "+z;
+    </script><hr>
+
+    <!-- Method 2 -->
+    <h3> Using var Variable declared</h3>
+    <p id="Var"></p>
+    <script>
+        var x = 10;
+        var y = 4;
+        var z = x + y;
+        document.getElementById("Var").innerHTML ="The value of z is: " + z;
+    </script><hr>
+
+  <!-- Method 3 -->
+   <h3> Using const Variable declared</h3>
+   <p id="Const"></p>
+    <script>
+        const x = 10;
+        const y = 4;
+        const z = x + y;
+        document.getElementById("Const").innerHTML = "The value of z is: " + z;
+    </script>
+
+    <!-- Adding -->
+   <hr>
+    <p>The result of adding "5" + 2 + 3 is:</p>
+    <p id="result"></p>
+    <script>
+        let a = "5" + 2 + 3;
+        document.getElementById("result").innerHTML = a;
+    </script><hr>
+
+    <!-- $ sign -->
+    <h3>The dollar sign is treated as a letter in JavaScript names.</h3>
+    <p id="sign"></p>
+    <script>
+        let $$$ = 10;
+        let $myMoney = 25;
+        document.getElementById("sign").innerHTML = "Result = "+ $$$ + $myMoney;
+    </script><hr>
+
+    <!-- JavaScript Underscore (_) -->
+    <h3>The underscore is treated as a letter in JavaScript names.</h3>
+    <p id="underscore"></p>
+    <script>
+        let _x = 25;
+        let _100 = 25;
+      document.getElementById("underscore").innerHTML = "Result = " +_x + _100;
+    </script>
+
+
+</body>
+</html>

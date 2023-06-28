@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Show Html Elements</title>
+    <style>
+        body{
+            background-color: palegoldenrod; 
+            text-align: center;
+        }
+        h2{
+            font-family: 'Lucida Sans';
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Welcome to Learn JavaScript </h2>
+
+    <p id="Hide">JavaScript can Show HTML elements...</p>
+    <center><img id="Image" src="Image.avif" style="display: none;"><br><br></center>
+
+    <button
+      type="button"
+      onclick="document.getElementById('Image').style.display='block'"> Click Me For Show Image!
+    </button>
+  </body>
+</html>

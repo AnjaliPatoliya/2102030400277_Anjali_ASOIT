@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataType In JavaScript</title>
+</head>
+<body>
+    <p id="null"></p>
+    <p id="number"></p>
+    <p id="boolean"></p>
+    <p id="bigint"></p>
+    <p id="string"></p>
+    <p id="symbol"></p>
+    <p id="undifine"></p>
+    <p id="object1"></p>
+    <p id="object2"></p>
+    <script>
+                       // 1) primitive Data type
+
+        //null:
+        let n = null;
+        document.getElementById("null").innerHTML = "null dataType : " + n;
+
+        // Numbers:
+        let length = 16;
+        document.getElementById("number").innerHTML = "Number DataTpye :"+length;
+
+        // Booleans5:
+        let x=5,y=5;
+        document.getElementById("boolean").innerHTML = "Boolean DataType : "+(x==y);
+
+        //  BigInt:
+        let a = BigInt("1234567890");
+        document.getElementById("bigint").innerHTML ="BigInt DataType : "+ a;
+
+        // Strings:
+        let string = "Hello";
+        document.getElementById("string").innerHTML = "String DataType : "+string;
+
+        //symbol:
+        let s = symbol("Hello, How are you..");
+        document.getElementById("symbol").innerHTML = "Symbol DataType : "+s;
+
+        //undifine
+        let u;
+        document.getElementById("undifine").innerHTML = "Undifine DataType"+u;  
+        
+
+                       // 2) Non-Primitive
+        // Object:
+        const person = {firstName:"anju", lastName:"Patel"};
+        document.getElementById("object1").innerHTML = "Object DataType : " +  person.firstName;
+
+        // Array object:
+        const colors = ["Red", "Blue", "Pink"];
+        document.getElementById("object2").innerHTML ="Object DataType : " + colors[1];
+         
+    </script>
+</body>
+</html>
