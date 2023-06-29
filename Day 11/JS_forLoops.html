@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+</head>
+<body>
+    <h2>For Loop Example 1</h2>
+    <script>
+        let sum = 0;
+        let n = prompt("Enter number : ");
+        for(let i=0; i<5; i++) {
+            sum += i+1;
+        }
+        document.write("Sum Of "+ n + " Natural No is = "+sum);
+    </script> <hr>
+
+    <h2>For Loop Example 2</h2>
+    <p id="forLoop"></p>
+    <script>
+        const color = ["White", "Blue","Aqua","Red","Pink"];
+        let result = "";
+        for(let i=0; i<color.length; i++)
+        {
+            result += color[i] +"<br>";
+        }
+        document.getElementById("forLoop").innerHTML = "Result is : " + result + "<br>";
+    </script><hr>
+
+    <h2>For Loop Example 3</h2>
+    <p id="example3"></p>
+    <script>
+        const fruit = ["apple","banana","graps","charry"];
+        let i=1;
+        let len = fruit.length;
+        let ans = "";
+        for(; i<len; i++)
+        {
+            ans += fruit[i] +"<br>";
+        }
+        document.getElementById("example3").innerHTML = "Result is : " + ans;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for of Loop</title>
+</head>
+<body>
+    <h2>For Of Loop Example 1</h2>
+    <p>The for of statement loops through the values of any iterable object:</p>
+    <p id="Example1"></p>
+    <script>
+        const number = [1,5,6,7,2,3];
+        let result = "";
+        for (let x of number) {
+        result += x + "<br>";
+        }
+        document.getElementById("Example1").innerHTML = result;
+    </script><hr>
+
+    <h2>For Of Loop Example 1</h2>
+    <p>The for of statement loops through the values of an iterable object.</p>
+    <p id="text"></p>
+    <script>
+        let string = "Hello";
+
+        let ans = "";
+        for (let a of string) {
+            ans += a + "<br>";
+        }
+        document.getElementById("text").innerHTML = ans;
+    </script>
+</body>
+</html>

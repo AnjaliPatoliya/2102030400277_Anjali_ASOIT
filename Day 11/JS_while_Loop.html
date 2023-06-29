@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript While Loop</title>
+</head>
+<body>
+    <h2>JavaScript While Loop Example 1</h2>
+    <p id="Example1"></p>
+    <script>
+        let count = "";
+        let i = 0;
+        while (i < 5) {
+            count += "<br>" + i;
+            i++;
+        }
+        document.getElementById("Example1").innerHTML = "Result is : " + count;
+    </script><hr>
+
+
+    <h2>JavaScript Do While Loop Example 1</h2>
+    <p id="Example2"></p>
+    <script>
+        let result = ""
+        let j = 0;
+        do {
+            result += "<br>"+ j;
+            j++;
+        }
+        while (j < 5);  
+        
+        document.getElementById("Example2").innerHTML ="Result is : " + result;
+    </script>
+</body>
+</html>

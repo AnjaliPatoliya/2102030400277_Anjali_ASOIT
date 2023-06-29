@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable In JavaScript</title>
+</head>
+<body>
+
+    <h1>Local Variable In Function </h1>
+    <p>Outside myFunction() color is undefined.</p>
+    <p id="outside"></p>
+    <p id="inside"></p>
+
+    <script>
+        let x = "Outside: " + typeof color;
+        document.getElementById("outside").innerHTML = x;
+
+        function myFunction() {
+          let color = "White";
+          let x = "Inside: " + typeof color + " " + color; 
+          document.getElementById("inside").innerHTML = x;
+        }
+        myFunction();
+    </script>
+</body>
+</html>

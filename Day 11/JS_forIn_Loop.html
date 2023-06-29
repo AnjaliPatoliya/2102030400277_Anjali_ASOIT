@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript  forIn Loop</title>
+    <style>
+        h2{
+            color: rgb(9, 9, 182);
+        }
+    </style>
+</head>
+<body>
+    <!-- For In Loop -->
+    <h2>For In loop Example 1</h2>
+    <p id="Example1"></p>
+    <script>
+        const person = {fname:"Anju", lname:"Patoliya", age:20}; 
+        
+        let result = "";
+        for (let x in person) {
+          result += person[x] + " ";
+        }
+        
+        document.getElementById("Example1").innerHTML = result;
+    </script><hr>
+
+    <!-- For In Loops over array -->
+    <h2>For In Loops Example 2</h2>
+    <p>The for in statement can loops over array values:</p>
+    <p id="Example2"></p>
+    <script>
+        const numbers = [80, 6, 45, 16, 20];
+
+        let ans = "";
+        for (let i in numbers) {
+            ans += numbers[i] + "<br>"; 
+        }
+
+        document.getElementById("Example2").innerHTML = ans;
+    </script><hr>
+ 
+       <!-- The forEach() Method -->
+    <h2>For In loop Example 3</h2>
+    <h4>The forEach() Method</h4>
+    <p>Call a function once for each array element:</p>
+    <p id="Example3"></p>
+    <script>
+        const num = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        num.forEach(myFunction);
+        document.getElementById("Example3").innerHTML = txt;
+
+        function myFunction(value, index, array) {
+            txt += value + "<br>"; 
+        }
+    </script>
+
+
+</body>
+</html>

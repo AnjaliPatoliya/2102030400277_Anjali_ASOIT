@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function In JavaScript</title>
+</head>
+<body style="text-align: center;">
+    <h2 style="color: palevioletred; text-decoration: underline;">JavaScript Function</h2><hr>
+
+     <!-- simple Function  -->
+    <p style="color: blue;">Simple Function</p>
+    <p id="function"></p>
+    <script>
+        function myFunc(a, b) {
+            return a + b;
+        }
+        let ans = myFunc(10, 40);
+        document.getElementById("function").innerHTML = "Answer is = "+ans;
+    </script><hr>
+    
+     <!-- Convert Fahrenheit to celsius -->
+    <p style="color: blue;">Converts from Fahrenheit to Celsius :-</p>
+    <p id="function1"></p>
+    <script>
+        function toCelsius(f) {
+            return (5/9) * (f-32);
+        }
+
+        let result = toCelsius(80);
+        document.getElementById("function1").innerHTML = "Result is = "+result;
+    </script><hr>
+
+
+    <p style="color: blue;">Accessing a function without "()" returns the function and not give the function result</p>
+    <p id="function2"></p>
+    <script>
+        function toCelsius(f) {
+        return (5/9) * (f-32);
+        }
+
+        let value = toCelsius;               //in call function  not given a value
+        document.getElementById("function2").innerHTML = value;
+    </script><hr>
+</body>
+</html>

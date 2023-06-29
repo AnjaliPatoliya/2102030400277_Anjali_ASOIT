@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition Statement In JavaScript</title>
+</head>
+<body>
+    <h2>If Statement</h2>
+    <script>
+        let age = prompt("Enter age : ");
+        if(age>18) {
+            document.write("eligible for vote");
+        }
+    </script><hr>
+
+    <h2>If....Else Statement</h2>
+    <script>
+        let n = prompt("Enter number : ");
+        if( n % 2==0 ) {
+            document.write("Divide by 2");
+        } else {
+            document.write("not divide by 2");
+        }
+    </script><hr>
+
+    <h2>If....elif Statement</h2>
+    <script>
+        let x = prompt("Enter number : ");
+        if( x % 2 == 0) {
+            document.write("Divisible by for 2 ");
+        } else if(x % 3 == 0)
+        {
+            document.write("Divisible by for 3 ");
+        } else {
+            document.write("Not divisible by 2 and 3 ");
+        }
+    </script><hr>
+
+    <h2>Switch Case Statement</h2>
+    <p id="switchCase"></p>
+    <script>
+        let day;
+        switch(new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case  6:
+                day = "Saturday";
+                    }
+        document.getElementById("switchCase").innerHTML = "today is " + day;
+    </script>
+</body>
+</html>
