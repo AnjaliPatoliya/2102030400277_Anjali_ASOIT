@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript typeOf</title>
+</head>
+<body>
+    <h2>JavaScript typeOf</h2>
+    <p id="example1"></p>
+    <script>
+        let a = "6";
+        let b = + a;
+        let c = "Hello";
+        let d =  {name:"anju", age:"19"}
+        document.getElementById("example1").innerHTML = "Type of a : "+typeof a + "<br>" +
+        "Type of b : " + typeof b +"<br>" +
+        "Type of c : " + typeof c +"<br>" + 
+        "Type of d : " + typeof d +"<br>" +
+        "String() method can convert a number to a string : "+ String(45+9) + "<br>" +
+        "Using .toString() : "+(100+100).toString();
+    </script><hr>
+     
+     <!-- Convert number to String  -->
+     <h3>Convert number to String using (+) operator</h3>
+     <p id="example2"></p>
+     <script>
+         document.getElementById("example2").innerHTML = 
+         (1+"5" + 2) + "<br>" +
+         ("15"+2)+"<br>"+
+         (+"5" + 2) + "<br>" +
+         (+5) + "<br>" +
+         ("5" + 2) + "<br>" +
+         (5 + "2") + "<br>" +
+         (5 +2 ) + "<br>" +
+         ("5" + "2") + "<br>";
+     </script><hr>
+
+
+    <h3>Convert String to Number using (-) operator</h3>
+    <p id="example3"></p>
+     <script>
+        document.getElementById("example3").innerHTML = 
+        ("5" - 2) + "<br>" +
+        (5 - "2") + "<br>" +
+        (5 - 2) + "<br>" +
+        ("5"-"2") + "<br>" 
+
+     </script>
+</body>
+</html>

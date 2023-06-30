@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataType, object,array,Map</title>
+
+    <script>
+       /* primitive data types : String , Number , Boolean , Null */
+       //Global Variable
+       var a = 10;//holding number
+       var b = 20.50;//holding number
+       var fullName = null; // set null value data type
+       function stringConcat() 
+       {
+            // Local Variable
+            var first = document.getElementById("firstname").value;//holding string
+            var last = document.getElementsByName("lastname"); //holding string
+            fullName = first + ' ' + last[0].value;
+            // Validate name
+            if (first == "") 
+            {
+                document.getElementById("firstnameErr").innerText = "Please enter your first name";
+            }
+            else if (last[0].value == "") 
+            {
+                document.getElementById("lastnameErr").innerText = "Please enter your last name";
+            }
+            else 
+            {
+             document.getElementById("fullname").innerText = fullName;
+            }
+       }
+       function sumFun() {
+            var total = (a + b);
+            alert("sum of a + b is :" + total);
+       }
+       function objectFun() {
+            var emp = new Object();
+            emp.id = 1;
+            emp.name = "Anju Patel";
+            emp.salary = 80000;
+            delete emp.salary;
+            alert(emp.id + " " + emp.name);
+       }
+       function arrayFun() {
+            var i;
+            var emp = new Array();
+            emp[0] = "Anju";
+            emp[1] = "Rutu";
+            emp[2] = "Maheshwari";
+            var string = "";
+            for (i = 0; i < emp.length; i++) 
+            {
+                string += emp[i] + "<br/>";
+            }
+            document.getElementById("arrayvalue").innerHTML = string;
+            /* innerHTML property gets and sets the plain text or HTML contents in
+            the elements */
+       }
+       function mapFun() {
+            // Create a Map
+            const emp = new Map([ [1, "Anju"], [2, "Rutu"], [3, "Maheshwari"]]);
+            document.getElementById("mapvalue").innerText = emp.get(2);
+            /* innerText property sets or returns the text content as plain text of
+            the specified node */
+       }
+    </script>
+</head>
+<body>
+        <p>Sum of 50 + 80.56 value</p>
+        <button type="button" onclick="sumFun()">Click For Sum </button><br /><hr>
+
+        <p>
+            <label>First Name : </label>
+            <input type="text" id="firstname" name="firstname">
+            <div class="error" id="nameErr"></div>
+        </p>
+        <p>
+            <label>Last Name : </label>
+            <input type="text" id="lastname" name="lastname">
+            <div class="error" id="nameErr"></div>
+        </p>
+        <button type="button" onclick="stringConcat()">Get Full Name. </button>
+        <p id="fullname"></p><br /><hr>
+
+        <button type="button" onclick="objectFun()">Get Object Value. </button><br /><br /><hr>
+
+        <button type="button" onclick="arrayFun()">Get Array Value. </button>
+        <p id="arrayvalue"></p><br />
+        <button type="button" onclick="mapFun()">Get second Position Value. </button>
+        <p id="mapvalue"></p><hr>
+</body>
+</html>

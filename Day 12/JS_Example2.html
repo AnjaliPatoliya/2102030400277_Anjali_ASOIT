@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Objectt</title>
+    <script>
+        function alertDialog() { 
+            alert("This is alert dialog"); 
+        } 
+        function confirmDialog() { 
+            var v = confirm("Are u sure?"); 
+            if (v == true) { 
+                document.getElementById("confirmResult").innerText = "yes"; 
+            } else { 
+                document.getElementById("confirmResult").innerText = "No"; 
+            } 
+        } 
+        function promptDialog() { 
+            var v = prompt("Who are you?"); 
+            document.getElementById("promptResult").innerText = v; 
+        } 
+        function openWindows() { 
+             open("https://www.youtube.com/"); 
+        } 
+        function closeWindows() { 
+            this.close(); 
+        } 
+</script>
+</head>
+<body>
+    <button type="button" onclick="alertDialog()">Alert Dialog. </button><br /><br />
+    <button type="button" onclick="confirmDialog()">Confirm Dialog. </button>
+    <p> Confirmation result : <span id="confirmResult"></span></p><br />
+    <button type="button" onclick="promptDialog()">Prompt Dialog. </button>
+    <p> Prompt result : <span id="promptResult"></span></p><br />
+    <button type="button" onclick="openWindows()">Open youtube. </button><br /><br />
+    <button type="button" onclick="closeWindows()">Close youtube. </button>
+</body>
+</html>

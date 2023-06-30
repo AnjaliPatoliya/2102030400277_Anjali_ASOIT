@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen or Navigator Object </title>
+    <script>
+        function screenNavigatorFun() { 
+            var sInfo = ""; 
+            sInfo += "screen.width: " + screen.width; 
+            sInfo += "<br/>screen.height: " + screen.height; 
+            sInfo += "<br/>screen.availWidth: " + screen.availWidth; 
+            sInfo += "<br/>screen.availHeight: " + screen.availHeight; 
+            sInfo += "<br/>screen.colorDepth: " + screen.colorDepth; 
+            sInfo += "<br/>screen.pixelDepth: " + screen.pixelDepth; 
+            document.getElementById("screenInfo").innerHTML = sInfo; 
+            var nInfo = ""; 
+            nInfo += "navigator.cookieEnabled: " + navigator.cookieEnabled; 
+            nInfo += "<br/>navigator.language: " + navigator.language; 
+            nInfo += "<br/>navigator.platform: " + navigator.platform; 
+            document.getElementById("navigatorInfo").innerHTML = nInfo; 
+        } 
+        function goBack() { 
+            history.back();//for previous page
+        } 
+        function goForward() { 
+            history.forward();//for next page 
+        } 
+    </script>
+</head>
+<body>
+    <button type="button" onclick="screenNavigatorFun()">Get Screen & Navigator Info </button>
+    <h3 style="color: blue; text-decoration: underline; font-family: 'Lucida Sans';">
+        Screen Info
+    </h3>
+    <span id="screenInfo"></span>
+    <h3 style="color: blue; text-decoration: underline; font-family: 'Lucida Sans';">
+        Navigator Info
+    </h3>
+    <span id="navigatorInfo"></span><br>
+    <button type="button" onclick="goBack()">Back </button>
+    <button type="button" onclick="goForward()">Next </button>
+</body>
+</html>
