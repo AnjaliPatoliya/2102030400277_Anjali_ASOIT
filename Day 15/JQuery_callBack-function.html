@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function in JQuery </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div{
+            border: 2px solid black; 
+            height: 300px; 
+            width: 400px; 
+            margin: 10%;
+            background-image: linear-gradient(rgb(243, 253, 253),#0ba5f78a);
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("div").hide("slow", function(){
+              alert("your form is hide!");
+            });
+          });
+        });
+    </script>
+</head>
+<center><body>
+    <div>
+        <h1>Log in Form</h1>
+            <spam>UserName : </spam><br>
+            <input type="text" autofocus placeholder="Enetr UserName Here.."margin="50"/><br><br>
+            <spam>Password : </spam><br/>
+            <input type="password" autofocus placeholder="Enetr password Here.."margin="12"/><br><br>
+            <input type="button" value="sign in"/>        
+    </div>
+     <button>Hide</button>
+    
+</body></center>
+</html>
