@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(3000);
+        });
+        });
+    </script>
+     <style>
+        #div1{
+            width:80px;
+            height:80px;
+            display:none;
+            background-color:rgb(255, 0, 204);
+        }
+        #div2{
+            width:80px;
+            height:80px;
+            display:none;
+            background-color: rgb(254, 8, 8);
+        }
+        #div3{
+            width:80px;
+            height:80px;
+            display:none;
+            background-color:rgb(58, 58, 247) ;
+        }
+    </style>
+</head>
+<body>
+    <p>Demonstrate fadeOut with different parameters.</p>
+
+    <button>Click to fade out boxes</button><br><br>
+
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+    <div id="div3"></div>
+</body>
+</html>
