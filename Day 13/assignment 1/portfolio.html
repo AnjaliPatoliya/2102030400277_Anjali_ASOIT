@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Websit</title>
+    <!-- .......CSS Link................. -->
+    <link rel="stylesheet" href="portfolio_style.css">
+    <!-- .................Fontawsome Link................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+             <!--...................... NavBar....................... -->
+            <nav>
+                <div class="left">
+                    <h2><span>A</span>njali Patoliya...</h2>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#homePage">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contect">contact</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+            <!-- .................... Home Page..................... -->
+            <div style="background-image: url(HomePage.png);background-size: cover;background-position: right;background-attachment: fixed;">
+                <div id="homePage">
+                    <div class="homePageText" style="padding-top: 300px;padding-left: 100px;">
+                        <h1>Hii, I'm <span> Anjali</span></h1>
+                        <p>B.tech CE Student</p>
+                    </div>
+                </div>
+            </div>
+
+            
+   <!--...................About me................... -->
+   <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/Day 13/assignment 1/aboutMe.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="title">About Me</h1><br>
+                        <p>I am self-motivated and hardworking person.I am doing my B.tech in Computer Engineering
+                            from Aditya Silver Oak Insitute Of technology-Ahmedabad. I have good knowledge of 
+                            technical, communication and presentation skills. I am excited to strat a new journey
+                            of my career as a software developer and looking for challenging role where I'll get a chance to 
+                            apply my technical & soft skills</p>
+                        <div class="tab-titles">
+                            <p class="tab-links link-active" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('career Objective')">Experience</p>
+                    </div>
+                   <!-- ......About Skills..... -->
+                   <div class="tab-contents tab-active" id="skills">
+                        <ul>
+                            <li>C Programming language</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Basic of JavaScript</li>
+                            <li>Basic of SQL</li>
+                        </ul>
+                   </div>
+                    <!-- ......About Education..... -->
+                   <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech Computer Engineering</span>
+                                <br>Aditya Silver Oak Insitute Of technology-Ahmedabad <br>
+                                 2023-2026 (running) | 4th sem SPI - 9.65</li>
+                            <li><span>HSC</span>
+                                <br>Shree Kanya Vidyalay-Rajkot
+                            <br> May 2021 | PR - 91.08%</li>
+                            <li><span>SSC</span>
+                                <br>
+                                Shree Manajibhai Jagabhai Babariya High School-Zalansar(dis-Junagadh)
+                            <br> March 2019 | PR - 98.57%</li>
+                        </ul>
+                    </div>
+                    <!-- ......About career-Objective....... -->
+                   <div class="tab-contents" id="career Objective">
+                    <ul>
+                       <li>Fresher</li>
+                    </ul>
+               </div>
+
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- ............................Project......................................... -->
+   <div id="Project">
+        <div class="container">
+            <h1 class="title">Project</h1><br><br>
+            <div class="project-box">
+                <div>
+                    <center><i class="fa-brands fa-amazon"></i></center>
+                    <h2>Amazon clone</h2>
+                    <p>using Html & css</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ............................Portfolio......................................... -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="title">Portfolio</h1><br>
+        <div class="WorkList">
+            <div class="work">
+                <img src="image1.jpg">
+                <div class="layer">Learn new</div>
+            </div>
+            <div class="work">
+                <img src="image2.jpg">
+                <div class="layer">Online study</div>
+            </div>
+            <div class="work">
+                <img src="image3.avif">
+                <div class="layer">Reading</div>
+            </div>
+        </div> 
+        <a href="#" class="button">See More</a>      
+    </div>
+</div><br><br><br>
+<!-- ........................................Contect............................ -->
+<div id="contect">
+    <div class="container">
+        <h1 class="title">Contect Me</h1><br>
+            <p> <i class="fa-solid fa-envelope"></i> &nbsp; anjupatoliya3104@gmail.com</p><br>
+            <p><i class="fa-solid fa-phone"></i> &nbsp; 6351246362</p><br>
+            <p><i class="fa-solid fa-location-dot"></i> &nbsp; Ahmedabad - Gujarat</p><br>
+            <div class="socialMeadia-icon">
+                <a href="http://www.linkedin.com/in/anjali-patoliya01">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>&nbsp;
+                <a href="https://github.com/AnjaliPatoliya/AWT-Fullstack-Internship">
+                   <i class="fa-brands fa-github icon"></i>
+                </a><br><br>
+            </div>
+    </div>
+</div>
+
+
+   <!-- ..................................JavaScript............................................... -->
+   <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabName) 
+         {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("link-active");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("tab-active");
+            }
+            event.currentTarget.classList.add("link-active");
+            document.getElementById(tabName).classList.add("tab-active");
+         }
+   </script>
+</body>
+</html>
