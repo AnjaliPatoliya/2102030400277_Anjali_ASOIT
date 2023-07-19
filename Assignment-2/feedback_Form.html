@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      form{
+        border: 1px solid black;
+        margin: 50px 450px 50px 450px;
+        padding: 20px;
+        background-image: linear-gradient(rgb(251, 252, 252),#64d2f499);
+      }
+    </style>
+</head>
+<body>
+   <center><form id="feedbackForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br><br>
+        
+        <center><input type="submit" value="Submit" style="text-align: center;"></center>
+    </form></center>
+    <script>
+        $(document).ready(function() {
+          $('#feedbackForm').submit(function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            
+            // Get form data
+            var formData = $(this).serialize();
+            
+            // Send form data to server
+            $.ajax({
+              type: 'POST',
+              url: 'submit_feedback.php', // Replace with your server-side script URL
+              data: formData,
+              success: function(response) {
+                // Handle successful submission
+                alert('Thank you for your feedback!');
+                $('#feedbackForm')[0].reset(); // Reset form
+              },
+              error: function(xhr, status, error) {
+                // Handle error
+                alert('An error occurred while submitting the form.');
+                console.log(xhr.responseText);
+              }
+            });
+          });
+        });
+      </script>
+      
+</body>
+</html>
